@@ -1,34 +1,36 @@
-# LocalSTT
+# NoxSTT
 
 (Jump to [English](#English))
 
-### [Català]
+### [Português]
 
-> **Nota: Aquesta aplicació de moment només és una prova de concepte**
+> **Nota: Este aplicativo é uma prova de conceito no momento**
 
-LocalSTT és una aplicació per Android que proporciona reconeixement automàtic de la parla sense necessitat de conexió a internet ja que tot el processament és local al mòbil.
+NoxSTT é um aplicativo Android que fornece serviços de reconhecimento automático de fala sem precisar de conexão com a internet, pois todo o processamento é feito localmente no seu telefone.
 
-Això és possible gràcies a:
-- un RecognitionService que utilitza la llibreria de Vosk
-- un RecognitionService que utilitza la lliberia de Mozilla Deepspeech
-- una Activity que gestiona intents RECOGNIZE_SPEECH entre altres
+Isso é possível graças a:
+- um RecognitionService envolvendo a biblioteca Vosk
+- um RecognitionService envolvendo a biblioteca DeepSpeech da Mozilla 
+- uma atividade que lida com intenções RECOGNIZE_SPEECH entre outras
 
-El codi és actualment una prova de concepte i es basa fortament en els següents projectes:
+O código atualmente é apenas um PoC fortemente baseado em::
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [Vosk Android Demo](https://github.com/alphacep/vosk-android-demo)
+- [LocalSTT].(https://github.com/ccoreilly/LocalSTT)
 
-LocalSTT hauria de funcionar amb la majoria de teclats i aplicacions que implementen la funció de reconeixement de veu a través d'un intent RECOGNIZE_SPEECH o directament fent servir la classe SpeechRecognizer d'Android. Ha estat provada amb èxit fent servir les següent aplicacions en un terminal Android 9:
+O NoxSTT deve funcionar com todos os teclados e aplicativos que implementam o reconhecimento de fala por meio da intenção RECOGNIZE_SPEECH ou da classe SpeechRecognizer do Android. Foi testado com sucesso usando os seguintes aplicativos no Android 9:
+- [Tasker](https://tasker.joaoapps.com)
 - [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard)
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [SwiftKey](https://www.swiftkey.com)
 
-Us podeu descarregar un APK que inclou models de Vosk i DeepSpeech pel català [aquí](https://github.com/ccoreilly/LocalSTT/releases/download/2020-12-03/localstt.apk).
+Se você quiser usar o aplicativo com o seu idioma, basta substituir os modelos em `app/src/main/assets/sync` e recompilar o aplicativo.
 
 ### [English]
 
 > **Note: This application is just a proof of concept for now**
 
-LocalSTT is an Android application that provides automatic speech recognition services without needing internet connection as all processing is done locally on your phone.
+NoxSTT is an Android application that provides automatic speech recognition services without needing internet connection as all processing is done locally on your phone.
 
 This is possible thanks to:
 - a RecognitionService wrapping the Vosk library
@@ -38,16 +40,17 @@ This is possible thanks to:
 The code is currently just a PoC strongly based on:
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [Vosk Android Demo](https://github.com/alphacep/vosk-android-demo)
+- [LocalSTT].(https://github.com/ccoreilly/LocalSTT)
 
-LocalSTT should work with all keyboards and applications implementing speech recognition through the RECOGNIZE_SPEECH intent or Android's SpeechRecognizer class. It has been successfully tested using the following applications on Android 9:
+NoxSTT should work with all keyboards and applications implementing speech recognition through the RECOGNIZE_SPEECH intent or Android's SpeechRecognizer class. It has been successfully tested using the following applications on Android 9:
+- [Tasker](https://tasker.joaoapps.com)
 - [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard)
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [SwiftKey](https://www.swiftkey.com)
 
-You can download a pre-built binary with Vosk and DeepSpeech models for catalan [here](https://github.com/ccoreilly/LocalSTT/releases/download/2020-12-03/localstt.apk).
 
 If you want to use the application with your language just replace the models in `app/src/main/assets/sync` and rebuild the application.
 
 ### Demo
 
-![LocalSTT in action](./demo.gif)
+![NoxSTT in action (LocalSTT)](./demo.gif)
