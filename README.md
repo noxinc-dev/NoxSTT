@@ -16,7 +16,7 @@ Isso é possível graças a:
 O código atualmente é apenas um PoC fortemente baseado em::
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [Vosk Android Demo](https://github.com/alphacep/vosk-android-demo)
-- [LocalSTT].(https://github.com/ccoreilly/LocalSTT)
+- [LocalSTT](https://github.com/ccoreilly/LocalSTT)
 
 O NoxSTT deve funcionar com todos os teclados e aplicativos que implementam o reconhecimento de fala por meio da intenção RECOGNIZE_SPEECH ou da classe SpeechRecognizer do Android. Foi testado com sucesso usando os seguintes aplicativos no Android 9:
 - [Tasker](https://tasker.joaoapps.com)
@@ -40,7 +40,7 @@ This is possible thanks to:
 The code is currently just a PoC strongly based on:
 - [Kõnele](https://github.com/Kaljurand/K6nele)
 - [Vosk Android Demo](https://github.com/alphacep/vosk-android-demo)
-- [LocalSTT].(https://github.com/ccoreilly/LocalSTT)
+- [LocalSTT](https://github.com/ccoreilly/LocalSTT)
 
 NoxSTT should work with all keyboards and applications implementing speech recognition through the RECOGNIZE_SPEECH intent or Android's SpeechRecognizer class. It has been successfully tested using the following applications on Android 9:
 - [Tasker](https://tasker.joaoapps.com)
@@ -51,6 +51,6 @@ NoxSTT should work with all keyboards and applications implementing speech recog
 
 If you want to use the application with your language just replace the models in `app/src/main/assets/sync` and rebuild the application.
 
-### Demo
+### Demo (LocalSTT)
 
 ![NoxSTT in action (LocalSTT)](./demo.gif)
