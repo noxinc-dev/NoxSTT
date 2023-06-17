@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NoxSTT</string>
+    <string name="vosk_recognition_service">Kaldi/Vosk Recognizer</string>
+    <!-- <string name="deepspeech_recognition_service">Deepspeech Recognizer</string> -->
+    <string name="recognized">Reconhecido: %1$s</string>
+    <string name="loading">Carregando...</string>
+    <string name="speaknow">Pode falar!</string>
+
+</resources>
