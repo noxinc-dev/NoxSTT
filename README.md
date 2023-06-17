@@ -25,6 +25,9 @@ O NoxSTT deve funcionar com todos os teclados e aplicativos que implementam o re
 - [SwiftKey](https://www.swiftkey.com)
 
 Se você quiser usar o aplicativo com o seu idioma, basta substituir os modelos em `app/src/main/assets/sync` e recompilar o aplicativo.
+Para usar o modelo em português, descompacte os arquivos da pasta 'app/src/main/assets/sync/vosk-catala/'.
+O modelo utilizado foi disponibilizado pelo grupo [FalaBrasil](https://github.com/falabrasil). 
+Deixo um agradecimento ao [Cassio Batista](https://github.com/cassiotbatista), que me auxiliou no uso do modelo.
 
 ### [English]
 
